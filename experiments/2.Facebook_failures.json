@@ -1,0 +1,29 @@
+{
+    "name": "Facebook_failures",
+    "outputFolder": "output/2.failures",
+    "topologies": [
+        {
+            "pathToFile": "topologies/2.demo_failures/surfsara_small.json"
+        }
+    ],
+    "workloads": [
+        {
+            "pathToFile": "workload_traces/2022-10-01_2022-10-02",
+            "type": "ComputeWorkload"
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": 300
+        }
+    ],
+    "failureModels": [
+        {
+            "type": "no"
+        },
+        {
+            "type": "trace-based",
+            "pathToFile": "failure_traces/Facebook_user_reported.parquet"
+        }
+    ]
+}

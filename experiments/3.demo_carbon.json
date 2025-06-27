@@ -1,0 +1,28 @@
+{
+    "name": "3.demo_carbon",
+    "topologies": [
+        {
+            "pathToFile": "topologies/3.demo_carbon/surfsara_small_BE.json"
+        },
+        {
+            "pathToFile": "topologies/3.demo_carbon/surfsara_small_DE.json"
+        },
+        {
+            "pathToFile": "topologies/3.demo_carbon/surfsara_small_FR.json"
+        },
+        {
+            "pathToFile": "topologies/3.demo_carbon/surfsara_small_NL.json"
+        }
+    ],
+    "workloads": [
+        {
+            "pathToFile": "workload_traces/2022-10-01_2022-10-31",
+            "type": "ComputeWorkload"
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": 30000
+        }
+    ]
+}
