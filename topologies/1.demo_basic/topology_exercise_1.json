@@ -1,0 +1,38 @@
+{
+    "clusters":
+    [
+        {
+            "name": "C01",
+            "hosts" :
+            [
+                {
+                    "name": "H01",
+                    "cpu":
+                    {
+                        "coreCount": 32,
+                        "coreSpeed": 3200
+                    },
+                    "memory": {
+                        "memorySize": 140457600000
+                    },
+                    "count": 30
+                },
+                {
+                    "name": "H01",
+                    "cpu":
+                    {
+                        "coreCount": 16,
+                        "coreSpeed": 2100
+                    },
+                    "memory": {
+                        "memorySize": 140457600000
+                    },
+                    "count": 40
+                }
+            ],
+            "powerSource": {
+                "carbonTracePath": "carbon_traces/carbon_2012.parquet"
+            }
+        }
+    ]
+}

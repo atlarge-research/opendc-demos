@@ -1,0 +1,19 @@
+{
+    "name": "exercise_1",
+    "topologies": [
+        {
+            "pathToFile": "topologies/1.demo_basic/topology_exercise_1.json"
+        }
+    ],
+    "workloads": [
+        {
+            "pathToFile": "workload_traces/surfsara",
+            "type": "ComputeWorkload"
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": 30000
+        }
+    ]
+}
