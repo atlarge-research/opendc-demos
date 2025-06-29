@@ -15,7 +15,7 @@
                     "memory": {
                         "memorySize": 140457600000
                     },
-                    "count": 30
+                    "count": 3
                 },
                 {
                     "name": "H01",
@@ -27,7 +27,7 @@
                     "memory": {
                         "memorySize": 140457600000
                     },
-                    "count": 40
+                    "count": 4
                 }
             ],
             "powerSource": {
