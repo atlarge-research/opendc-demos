@@ -1,0 +1,34 @@
+{
+  "name": "hpl_1node",
+  "topologies": [
+    {
+      "pathToFile": "project/topologies/cluster_1node_16c_3ghz.json"
+    }
+  ],
+  "workloads": [
+    {
+      "pathToFile": "project/workloads/hpl_1node",
+      "type": "ComputeWorkload"
+    }
+  ],
+  "exportModels": [
+    {
+      "exportInterval": 3600,
+      "printFrequency": 1680,
+      "filesToExport": [
+        "host",
+        "powerSource",
+        "service",
+        "task"
+      ]
+    }
+  ],
+  "outputFolder": "project/output",
+  "runs": 1,
+  "allocationPolicies": [
+    {
+      "type": "prefab",
+      "policyName": "ActiveServers"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[{
+    "name": "hpl_4nodes",
+    "outputFolder": "project/output",
+    "topology": {
+        "pathToFile": "project/topologies/cluster_4node_16c_3ghz.json"
+    },
+    "workload": {
+        "pathToFile": "project/workloads/hpl_4nodes",
+        "type": "ComputeWorkload"
+    },
+    "allocationPolicy": {
+        "type": "prefab",
+        "policyName": "ActiveServers"
+    },
+    "exportModel": {
+        "exportInterval": 3600,
+        "printFrequency": 1680,
+        "filesToExport": [
+            "host",
+            "powerSource",
+            "service",
+            "task"
+        ],
+        "filesToExportDict": {
+            "host": true,
+            "task": true,
+            "powerSource": true,
+            "battery": false,
+            "service": true
+        }
+    }
+}]
