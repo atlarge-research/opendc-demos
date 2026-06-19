@@ -143,7 +143,7 @@ def convert_notebook(notebook_path, output_dir):
 
 # %%
 # --- Config ---
-input_dir = "1.first_experiment"
+input_dir = "1."
 output_dir = input_dir + "-markdown"
 
 create_output_dir(input_dir, output_dir)
