@@ -1,17 +1,17 @@
 {
-    "name": "3.datacenter_location",
+    "name": "3.horizontal_scaling",
     "topologies": [
         {
-            "pathToFile": "topologies/3.datacenter_location/surfsara_AT.json"
+            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_100.json"
         },
         {
-            "pathToFile": "topologies/3.datacenter_location/surfsara_AU.json"
+            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_150.json"
         },
         {
-            "pathToFile": "topologies/3.datacenter_location/surfsara_BE.json"
+            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_200.json"
         },
         {
-            "pathToFile": "topologies/3.datacenter_location/surfsara_NL.json"
+            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_279.json"
         }
     ],
     "workloads": [

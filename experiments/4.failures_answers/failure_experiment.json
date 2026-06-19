@@ -2,7 +2,7 @@
     "name": "4.failures",
     "topologies": [
         {
-            "pathToFile": "topologies/4.failures/surfsara.json"
+            "pathToFile": "topologies/4.failures_answers/surfsara.json"
         }
     ],
     "workloads": [

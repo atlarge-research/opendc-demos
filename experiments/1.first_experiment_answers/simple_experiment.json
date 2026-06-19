@@ -2,7 +2,7 @@
     "name": "1.first_experiment",
     "topologies": [
         {
-            "pathToFile": "topologies/1.first_experiment/surfsara.json"
+            "pathToFile": "topologies/1.first_experiment_answers/surfsara.json"
         }
     ],
     "workloads": [

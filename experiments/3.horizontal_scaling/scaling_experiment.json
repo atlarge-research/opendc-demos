@@ -1,5 +1,5 @@
 {
-    "name": "2.horizontal_scaling",
+    "name": "3.horizontal_scaling",
     "topologies": [
         {
             "pathToFile": "topologies/1.first_experiment/surfsara.json"
