@@ -2,6 +2,15 @@
     "name": "3.datacenter_location",
     "topologies": [
         {
+            "pathToFile": "topologies/3.datacenter_location/surfsara_AT.json"
+        },
+        {
+            "pathToFile": "topologies/3.datacenter_location/surfsara_AU.json"
+        },
+        {
+            "pathToFile": "topologies/3.datacenter_location/surfsara_BE.json"
+        },
+        {
             "pathToFile": "topologies/3.datacenter_location/surfsara_NL.json"
         }
     ],
