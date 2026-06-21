@@ -3,7 +3,7 @@ This is a repository that holds demos for the OpenDC framework.
 [OpenDCExperimentRunner](OpenDCExperimentRunner) contains the latest build of OpenDC. 
 For the source code, visit https://github.com/atlarge-research/opendc
 
-For documentation of OpenDC go [here](https://atlarge-research.github.io/opendc/docs/category/documentation)
+For documentation of OpenDC go [here](https://opendc.org/learn/category/documentation)
 
 ## Running the demos
 The demos can be run in two ways: Through Codespaces or on a local machine. We suggest running through Codespaces because everything will be setup automatically.
