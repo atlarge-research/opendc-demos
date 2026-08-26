@@ -2,13 +2,16 @@
     "name": "4.failures",
     "topologies": [
         {
-            "pathToFile": "topologies/4.failures/surfsara.json"
+            "importFrom": "topologies/4.failures/surfsara.json"
         }
     ],
     "workloads": [
         {
-            "pathToFile": "workload_traces/surf_week",
-            "type": "ComputeWorkload"
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_week"
+            }
         }
     ],
     "failureModels": [
@@ -16,13 +19,16 @@
             "type": "no"
         },
         {
-            "type": "trace-based",
-            "pathToFile": "failure_traces/Facebook_user_reported.parquet"
+            "type": "traceBased",
+            "source": {
+                "type": "named",
+                "name": "failure_traces/Facebook_user_reported.parquet"
+            }
         }
     ],
     "exportModels": [
         {
-            "exportInterval": 3600,
+            "exportInterval": "3600 s",
             "printFrequency": 24,
             "filesToExport": [
                 "host",

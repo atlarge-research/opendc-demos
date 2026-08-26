@@ -7,22 +7,25 @@
                     "name": "H01",
                     "cpu": {
                         "coreCount": 16,
-                        "coreSpeed": 2100
+                        "coreSpeed": "2100 MHz"
                     },
                     "memory": {
-                        "memorySize": 100000
+                        "size": "100 GB"
                     },
                     "cpuPowerModel": {
                         "modelType": "sqrt",
-                        "power": 400.0,
-                        "idlePower": 32.0,
-                        "maxPower": 180.0
+                        "power": "400.0 W",
+                        "idlePower": "32.0 W",
+                        "maxPower": "180.0 W"
                     },
                     "count": 277
                 }
             ],
             "powerSource": {
-                "carbonTracePath": "carbon_traces/BE_2021-2024.parquet"
+                "carbon": {
+                    "type": "named",
+                    "name": "carbon_traces/BE_2021-2024.parquet"
+                }
             }
         }
     ]

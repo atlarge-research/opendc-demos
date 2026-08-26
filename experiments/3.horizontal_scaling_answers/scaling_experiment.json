@@ -2,27 +2,30 @@
     "name": "3.horizontal_scaling",
     "topologies": [
         {
-            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_100.json"
+            "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_100.json"
         },
         {
-            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_150.json"
+            "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_150.json"
         },
         {
-            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_200.json"
+            "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_200.json"
         },
         {
-            "pathToFile": "topologies/3.horizontal_scaling_answers/surfsara_279.json"
+            "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_279.json"
         }
     ],
     "workloads": [
         {
-            "pathToFile": "workload_traces/surf_week",
-            "type": "ComputeWorkload"
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_week"
+            }
         }
     ],
     "exportModels": [
         {
-            "exportInterval": 3600,
+            "exportInterval": "3600 s",
             "printFrequency": 24,
             "filesToExport": [
                 "host",

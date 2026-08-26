@@ -2,18 +2,21 @@
     "name": "1.first_experiment",
     "topologies": [
         {
-            "pathToFile": "topologies/1.first_experiment_answers/surfsara.json"
+            "importFrom": "topologies/1.first_experiment/surfsara.json"
         }
     ],
     "workloads": [
         {
-            "pathToFile": "workload_traces/surf_week",
-            "type": "ComputeWorkload"
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_week"
+            }
         }
     ],
     "exportModels": [
         {
-            "exportInterval": 3600,
+            "exportInterval": "3600 s",
             "printFrequency": 24,
             "filesToExport": [
                 "host",

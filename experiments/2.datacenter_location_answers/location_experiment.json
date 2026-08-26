@@ -2,27 +2,30 @@
     "name": "2.datacenter_location",
     "topologies": [
         {
-            "pathToFile": "topologies/2.datacenter_location_answers/surfsara_AT.json"
+            "importFrom": "topologies/2.datacenter_location_answers/surfsara_AT.json"
         },
         {
-            "pathToFile": "topologies/2.datacenter_location_answers/surfsara_AU.json"
+            "importFrom": "topologies/2.datacenter_location_answers/surfsara_AU.json"
         },
         {
-            "pathToFile": "topologies/2.datacenter_location_answers/surfsara_BE.json"
+            "importFrom": "topologies/2.datacenter_location_answers/surfsara_BE.json"
         },
         {
-            "pathToFile": "topologies/2.datacenter_location_answers/surfsara_NL.json"
+            "importFrom": "topologies/2.datacenter_location_answers/surfsara_NL.json"
         }
     ],
     "workloads": [
         {
-            "pathToFile": "workload_traces/surf_week",
-            "type": "ComputeWorkload"
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_week"
+            }
         }
     ],
     "exportModels": [
         {
-            "exportInterval": 3600,
+            "exportInterval": "3600 s",
             "printFrequency": 24,
             "filesToExport": [
                 "host",
