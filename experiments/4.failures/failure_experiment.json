@@ -16,10 +16,10 @@
     ],
     "failureModels": [
         {
-            "type": "no"
+            "type": "none"
         },
         {
-            "type": "traceBased",
+            "type": "trace",
             "source": {
                 "type": "named",
                 "name": "failure_traces/Facebook_user_reported.parquet"
