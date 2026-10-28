@@ -1,5 +1,5 @@
 {
-    "name": "6.failures_answers",
+    "name": "6.failures",
     "topologies": [
         {
             "importFrom": "topologies/6.failures_answers/surfsara.json"

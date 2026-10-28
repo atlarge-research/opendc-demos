@@ -20,8 +20,7 @@
             "source": {
                 "type": "named",
                 "name": "failure_traces/Whatsapp_user_reported.parquet"
-            },
-            "startPoint": 0.6
+            }
         }
     ],
     "checkpointModels": [
@@ -30,26 +29,6 @@
             "interval": "10 min",
             "duration": "2 min",
             "intervalScaling": 1
-        },
-        {
-            "interval": "1 h",
-            "duration": "2 min",
-            "intervalScaling": 1
-        },
-        {
-            "interval": "10 h",
-            "duration": "2 min",
-            "intervalScaling": 1
-        },
-        {
-            "interval": "24 h",
-            "duration": "2 min",
-            "intervalScaling": 1
-        },
-        {
-            "interval": "10 min",
-            "duration": "2 min",
-            "intervalScaling": 1.5
         }
     ],
     "exportModels": [

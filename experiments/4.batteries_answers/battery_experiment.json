@@ -1,0 +1,36 @@
+{
+    "name": "4.batteries",
+    "topologies": [
+        {
+            "importFrom": "topologies/4.batteries/surfsara_no.json"
+        },
+        {
+            "importFrom": "topologies/4.batteries/surfsara_100kWh.json"
+        },
+        {
+            "importFrom": "topologies/4.batteries/surfsara_300kWh.json"
+        },
+        {
+            "importFrom": "topologies/4.batteries/surfsara_500kWh.json"
+        },
+        {
+            "importFrom": "topologies/4.batteries/surfsara_700kWh.json"
+        }
+    ],
+    "workloads": [
+        {
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_month"
+            }
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": "1h",
+            "printFrequency": 24,
+            "filesToExport": ["host", "powerSource", "service", "task", "battery"]
+        }
+    ]
+}

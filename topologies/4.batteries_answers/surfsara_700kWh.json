@@ -31,15 +31,15 @@
                 }
             },
             "battery": {
-                "capacity": "400 kWh",
-                "chargingSpeed": "400000 W",
+                "capacity": "700 kWh",
+                "chargingSpeed": "700000 W",
                 "initialCharge": "0 kWh",
                 "policy": {
                     "type": "runningMeanPlus",
                     "startingThreshold": 150.0,
                     "windowSize": 168
                 },
-                "embodiedCarbon": 40000.0,
+                "embodiedCarbon": 70000.0,
                 "expectedLifetime": 10.0
             }
         }

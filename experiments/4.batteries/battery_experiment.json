@@ -6,15 +6,6 @@
         },
         {
             "importFrom": "topologies/4.batteries/surfsara_100kWh.json"
-        },
-        {
-            "importFrom": "topologies/4.batteries/surfsara_200kWh.json"
-        },
-        {
-            "importFrom": "topologies/4.batteries/surfsara_300kWh.json"
-        },
-        {
-            "importFrom": "topologies/4.batteries/surfsara_400kWh.json"
         }
     ],
     "workloads": [

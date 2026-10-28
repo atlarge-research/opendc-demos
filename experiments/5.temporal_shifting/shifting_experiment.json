@@ -2,7 +2,7 @@
     "name": "5.temporal_shifting",
     "topologies": [
         {
-            "importFrom": "topologies/5.temporal_shifting/checkpointing/surfsara.json"
+            "importFrom": "topologies/5.temporal_shifting/surfsara.json"
         }
     ],
     "workloads": [
@@ -16,10 +16,28 @@
     ],
     "allocationPolicies": [
         {
-            "type": "prefab",
-            "policyName": "Mem"
+            "type": "filter",
+            "filters": [
+                {
+                    "type": "compute"
+                },
+                {
+                    "type": "vcpu",
+                    "allocationRatio": 1.0
+                },
+                {
+                    "type": "ram",
+                    "allocationRatio": 1.5
+                }
+            ],
+            "weighers": [
+                {
+                    "type": "ram",
+                    "multiplier": 1.0
+                }
+            ]
         },
-        {   
+        {
             "type": "filter",
             "filters": [
                 {

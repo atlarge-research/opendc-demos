@@ -16,40 +16,46 @@
     ],
     "failureModels": [
         {
-            "type": "none"
-        },
-        {
             "type": "trace",
             "source": {
                 "type": "named",
-                "name": "failure_traces/Facebook_user_reported.parquet"
+                "name": "failure_traces/Whatsapp_user_reported.parquet"
             }
+        }
+    ],
+    "checkpointModels": [
+        null,
+        {
+            "interval": "10 min",
+            "duration": "2 min",
+            "intervalScaling": 1
+        },
+                {
+            "interval": "1h",
+            "duration": "2 min",
+            "intervalScaling": 1
+        },
+                {
+            "interval": "10h",
+            "duration": "2 min",
+            "intervalScaling": 1
+        },
+                {
+            "interval": "24h",
+            "duration": "2 min",
+            "intervalScaling": 1
         },
         {
-            "type": "trace",
-            "source": {
-                "type": "named",
-                "name": "failure_traces/Instagram_user_reported.parquet"
-            }
-        },
-        {
-            "type": "trace",
-            "source": {
-                "type": "named",
-                "name": "failure_traces/Netflix_user_reported.parquet"
-            }
+            "interval": "10 min",
+            "duration": "2 min",
+            "intervalScaling": 1.5
         }
     ],
     "exportModels": [
         {
-            "exportInterval": "1 h",
+            "exportInterval": "1h",
             "printFrequency": 24,
-            "filesToExport": [
-                "host",
-                "powerSource",
-                "service",
-                "task"
-            ]
+            "filesToExport": ["host", "powerSource", "service", "task"]
         }
     ]
 }

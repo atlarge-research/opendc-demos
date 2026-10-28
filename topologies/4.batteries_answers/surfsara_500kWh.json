@@ -1,0 +1,47 @@
+{
+    "datacenters": [
+        {
+            "clusters": [
+                {
+                    "name": "C01",
+                    "hosts": [
+                        {
+                            "name": "H01",
+                            "cpu": {
+                                "coreCount": 16,
+                                "coreSpeed": "2100 MHz"
+                            },
+                            "memory": {
+                                "size": "100 GB"
+                            },
+                            "cpuPowerModel": {
+                                "type": "sqrt",
+                                "idlePower": "32.0 W",
+                                "maxPower": "180.0 W"
+                            },
+                            "count": 277
+                        }
+                    ]
+                }
+            ],
+            "powerSource": {
+                "carbon": {
+                    "type": "named",
+                    "name": "carbon_traces/NL_2021-2024.parquet"
+                }
+            },
+            "battery": {
+                "capacity": "500 kWh",
+                "chargingSpeed": "500000 W",
+                "initialCharge": "0 kWh",
+                "policy": {
+                    "type": "runningMeanPlus",
+                    "startingThreshold": 150.0,
+                    "windowSize": 168
+                },
+                "embodiedCarbon": 50000.0,
+                "expectedLifetime": 10.0
+            }
+        }
+    ]
+}

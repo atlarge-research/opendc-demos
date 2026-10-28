@@ -29,18 +29,6 @@
                     "type": "named",
                     "name": "carbon_traces/NL_2021-2024.parquet"
                 }
-            },
-            "battery": {
-                "capacity": "200 kWh",
-                "chargingSpeed": "200000 W",
-                "initialCharge": "0 kWh",
-                "policy": {
-                    "type": "runningMeanPlus",
-                    "startingThreshold": 150.0,
-                    "windowSize": 168
-                },
-                "embodiedCarbon": 20000.0,
-                "expectedLifetime": 10.0
             }
         }
     ]
