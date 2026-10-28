@@ -2,7 +2,7 @@
     "name": "3.horizontal_scaling",
     "topologies": [
         {
-            "importFrom": "topologies/1.first_experiment/surfsara.json"
+            "importFrom": "topologies/3.horizontal_scaling/surfsara_277.json"
         }
     ],
     "workloads": [
@@ -10,13 +10,13 @@
             "type": "trace",
             "source": {
                 "type": "named",
-                "name": "workload_traces/surf_week"
+                "name": "workload_traces/surf_month"
             }
         }
     ],
     "exportModels": [
         {
-            "exportInterval": "3600 s",
+            "exportInterval": "1 h",
             "printFrequency": 24,
             "filesToExport": [
                 "host",

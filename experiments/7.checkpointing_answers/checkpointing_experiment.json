@@ -1,8 +1,8 @@
 {
-    "name": "4.failures",
+    "name": "7.checkpointing",
     "topologies": [
         {
-            "importFrom": "topologies/4.failures_answers/surfsara.json"
+            "importFrom": "topologies/7.checkpointing/surfsara.json"
         }
     ],
     "workloads": [
@@ -19,7 +19,7 @@
             "type": "none"
         },
         {
-            "type": "traceBased",
+            "type": "trace",
             "source": {
                 "type": "named",
                 "name": "failure_traces/Facebook_user_reported.parquet"
@@ -42,7 +42,7 @@
     ],
     "exportModels": [
         {
-            "exportInterval": "3600 s",
+            "exportInterval": "1 h",
             "printFrequency": 24,
             "filesToExport": [
                 "host",

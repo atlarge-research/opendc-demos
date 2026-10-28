@@ -1,0 +1,55 @@
+{
+    "name": "6.failures",
+    "topologies": [
+        {
+            "importFrom": "topologies/6.failures/surfsara.json"
+        }
+    ],
+    "workloads": [
+        {
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_week"
+            }
+        }
+    ],
+    "failureModels": [
+        {
+            "type": "none"
+        },
+        {
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "failure_traces/Facebook_user_reported.parquet"
+            }
+        },
+        {
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "failure_traces/Instagram_user_reported.parquet"
+            }
+        },
+        {
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "failure_traces/Netflix_user_reported.parquet"
+            }
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": "1 h",
+            "printFrequency": 24,
+            "filesToExport": [
+                "host",
+                "powerSource",
+                "service",
+                "task"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "name": "5.temporal_shifting",
+    "topologies": [
+        {
+            "importFrom": "topologies/5.temporal_shifting/checkpointing/surfsara.json"
+        }
+    ],
+    "workloads": [
+        {
+            "type": "trace",
+            "source": {
+                "type": "named",
+                "name": "workload_traces/surf_month"
+            }
+        }
+    ],
+    "allocationPolicies": [
+        {
+            "type": "prefab",
+            "policyName": "Mem"
+        },
+        {   
+            "type": "filter",
+            "filters": [
+                {
+                    "type": "compute"
+                },
+                {
+                    "type": "vcpu",
+                    "allocationRatio": 1.0
+                },
+                {
+                    "type": "ram",
+                    "allocationRatio": 1.5
+                }
+            ],
+            "weighers": [
+                {
+                    "type": "ram",
+                    "multiplier": 1.0
+                }
+            ],
+            "timeshift": {
+                "shortForecastThreshold": 0.2,
+                "longForecastThreshold": 0.35,
+                "taskStopper": { "forecastThreshold": 0.4 }
+            }
+        }
+    ],
+    "exportModels": [
+        {
+            "exportInterval": "1h",
+            "printFrequency": 24,
+            "filesToExport": ["host", "powerSource", "service", "task"]
+        }
+    ]
+}

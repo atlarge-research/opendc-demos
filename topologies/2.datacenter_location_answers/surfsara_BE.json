@@ -1,24 +1,27 @@
 {
-    "clusters": [
+    "datacenters": [
         {
-            "name": "C01",
-            "hosts": [
+            "clusters": [
                 {
-                    "name": "H01",
-                    "cpu": {
-                        "coreCount": 16,
-                        "coreSpeed": "2100 MHz"
-                    },
-                    "memory": {
-                        "size": "100 GB"
-                    },
-                    "cpuPowerModel": {
-                        "modelType": "sqrt",
-                        "power": "400.0 W",
-                        "idlePower": "32.0 W",
-                        "maxPower": "180.0 W"
-                    },
-                    "count": 277
+                    "name": "C01",
+                    "hosts": [
+                        {
+                            "name": "H01",
+                            "cpu": {
+                                "coreCount": 16,
+                                "coreSpeed": "2100 MHz"
+                            },
+                            "memory": {
+                                "size": "100 GB"
+                            },
+                            "cpuPowerModel": {
+                                "type": "sqrt",
+                                "idlePower": "32.0 W",
+                                "maxPower": "180.0 W"
+                            },
+                            "count": 277
+                        }
+                    ]
                 }
             ],
             "powerSource": {

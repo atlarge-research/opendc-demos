@@ -11,7 +11,7 @@
             "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_200.json"
         },
         {
-            "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_279.json"
+            "importFrom": "topologies/3.horizontal_scaling_answers/surfsara_277.json"
         }
     ],
     "workloads": [
@@ -19,13 +19,13 @@
             "type": "trace",
             "source": {
                 "type": "named",
-                "name": "workload_traces/surf_week"
+                "name": "workload_traces/surf_month"
             }
         }
     ],
     "exportModels": [
         {
-            "exportInterval": "3600 s",
+            "exportInterval": "1 h",
             "printFrequency": 24,
             "filesToExport": [
                 "host",
